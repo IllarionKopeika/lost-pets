@@ -1,0 +1,9 @@
+<%= form_for(@pet) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :species %>
+  <%= f.text_field :species %>
+  <%= f.submit %>
+<% end %>
+
+<p><%= link_to "Back", pets_path %></p>
